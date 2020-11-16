@@ -5,4 +5,4 @@ from django.http import HttpResponse
 
 def homePageView(request):
     """Se encarga de mostrar la pagina inicial"""
-    return HttpResponse('Hola, World!')
+    return HttpResponse('Hello, World!')
