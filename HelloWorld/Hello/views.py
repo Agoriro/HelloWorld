@@ -1,8 +1,7 @@
 #Django
-from django.shortcuts import render
 from django.http import HttpResponse
-
+from django.shortcuts import render,redirect
 
 def homePageView(request):
-    """Se encarga de mostrar la pagina inicial"""
-    return HttpResponse('Hello, World!')
+    #return HttpResponse('Hello, World!')
+    return render(request=request,template_name = "index.html")
